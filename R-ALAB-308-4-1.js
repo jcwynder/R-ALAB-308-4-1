@@ -14,7 +14,7 @@ console.log(csv2DArray);
 
 // Part 3: Transforming Data
 
-// Object declarations for data of array
+// Object declarations for each data entry of array
 
 const object = { id: `42` };
 const Name = `name`;
@@ -52,3 +52,31 @@ const combinedArrays = [object, objectTwo, objectThree, objectFour];
 console.log(combinedArrays);
 
 // Part 4: Sorting and Manipulating Data
+
+// 1. Removal of last element from combinedArrays using splice()
+combinedArrays.splice(3, 1);
+console.log(combinedArrays);
+
+// 2. Declaration of new object and insertion of the following object at index 1:
+// { id: "48", name: "Barry", occupation: "Runner", age: "25" }
+const objectFive = { id: `48` };
+const NameFive = `name`;
+const OccupationFive = `occupation`;
+const AgeFive = `age`;
+(objectFive[NameFive] = `Barry`), (objectFive[OccupationFive] = `Runner`);
+objectFive[AgeFive] = `25`;
+
+combinedArrays.splice(1, 0, objectFive);
+console.log(combinedArrays);
+
+// 3. Declaration of new object and adds it to the end of array:
+// { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+const objectSix = { id: `7` };
+const NameSix = `name`;
+const OccupationSix = `occupation`;
+const AgeSix = `age`;
+(objectSix[NameSix] = `Bilbo`), (objectSix[OccupationSix] = `None`);
+objectSix[AgeSix] = `111`;
+
+combinedArrays.push(objectSix);
+console.log(combinedArrays);
