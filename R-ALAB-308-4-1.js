@@ -80,3 +80,17 @@ objectSix[AgeSix] = `111`;
 
 combinedArrays.push(objectSix);
 console.log(combinedArrays);
+
+// Calculation of averge age of the group
+const ages = [41, 25, 19, 58, 111];
+
+let sum = 0;
+for (number of ages) {
+  sum += number;
+}
+average = sum / ages.length;
+console.log(`The average age of the group is ${average} years old.`);
+
+// Final set of data converted to CSV format:
+// ID,Name,Occupation,Age\n42,Bruce,Knight,41\n48,Barry,Runner,25\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,
+// 26\n7,Bilbo,None,111
